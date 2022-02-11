@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Moprinca-web/static/css/main.59810f37.css",
+    "main.js": "/Moprinca-web/static/js/main.c881493f.js",
+    "static/media/manos.jpg": "/Moprinca-web/static/media/manos.510b1e52e7652fd79d26.jpg",
+    "static/media/aire.jpg": "/Moprinca-web/static/media/aire.acebb183ba08b601dace.jpg",
+    "static/media/reunion.jpg": "/Moprinca-web/static/media/reunion.18c0c271c7b17774c9b8.jpg",
+    "static/media/cemento.jpg": "/Moprinca-web/static/media/cemento.0d78dca447988c044d8d.jpg",
+    "static/media/metro.jpg": "/Moprinca-web/static/media/metro.a8acb9a756d7cbfd1672.jpg",
+    "static/media/instagram.png": "/Moprinca-web/static/media/instagram.80e598d8df0c0a94d580.png",
+    "static/media/Impermeabilizacion y fabricación techo 5.jpeg": "/Moprinca-web/static/media/Impermeabilizacion y fabricación techo 5.1328afeade1958d40413.jpeg",
+    "static/media/Reparación y mantenimiento aires acondicionados 6.jpeg": "/Moprinca-web/static/media/Reparación y mantenimiento aires acondicionados 6.a5284f5fd1858f4f529b.jpeg",
+    "static/media/sobre-nosotros.jpeg": "/Moprinca-web/static/media/sobre-nosotros.5b5a2b740e21287b36d9.jpeg",
+    "static/media/Resanamiento en paredes.jpeg": "/Moprinca-web/static/media/Resanamiento en paredes.e5c4de9395db1d85e869.jpeg",
+    "static/media/Reordenamiento eléctrico.jpeg": "/Moprinca-web/static/media/Reordenamiento eléctrico.7742fa6243d35a49922f.jpeg",
+    "static/media/Fabricación puntos de agua e instalación de bomba de agua.jpeg": "/Moprinca-web/static/media/Fabricación puntos de agua e instalación de bomba de agua.057077d37f5fca457e61.jpeg",
+    "static/media/Instalación piso laminado.jpeg": "/Moprinca-web/static/media/Instalación piso laminado.b21cd6fe0d793ddce4d6.jpeg",
+    "static/media/Fabricación de drywall 2.jpeg": "/Moprinca-web/static/media/Fabricación de drywall 2.31d5fc07c05d8bf5c75b.jpeg",
+    "static/media/instalacion-puerta-vidrio 2.jpeg": "/Moprinca-web/static/media/instalacion-puerta-vidrio 2.f596f473d644654da758.jpeg",
+    "static/media/Moproinca-logo.svg": "/Moprinca-web/static/media/Moproinca-logo.7e042f2404c2f5438640bc70786ad072.svg",
+    "static/media/Fabricación puntos eléctricos.jpeg": "/Moprinca-web/static/media/Fabricación puntos eléctricos.dcc6b526fd525ee60eff.jpeg",
+    "static/media/facebook.png": "/Moprinca-web/static/media/facebook.58f707c25084b765cf5e.png",
+    "static/media/Moproinca-simple-logo.svg": "/Moprinca-web/static/media/Moproinca-simple-logo.99874c74ca7c20c68044da004aee35ac.svg",
+    "static/media/grifo.svg": "/Moprinca-web/static/media/grifo.943da7a8b296426b5e2a0e5cc7839346.svg",
+    "static/media/menu.svg": "/Moprinca-web/static/media/menu.c7253651fffeacc6520f05f694780604.svg",
+    "static/media/copo-nieve.svg": "/Moprinca-web/static/media/copo-nieve.7316acbad971233caf58045a26781ca0.svg",
+    "static/media/not-water.svg": "/Moprinca-web/static/media/not-water.3126d260d7d6c6a89eb5746d0ca082d8.svg",
+    "static/media/Arrow.svg": "/Moprinca-web/static/media/Arrow.f5043aeedac2d7c0eeacf38e7c9dc0cf.svg",
+    "index.html": "/Moprinca-web/index.html",
+    "static/media/brocha.svg": "/Moprinca-web/static/media/brocha.91ea60293eae5ce9697e6918ac632921.svg",
+    "static/media/wall.svg": "/Moprinca-web/static/media/wall.66cfd47a085c8028091f77bbc33d3826.svg",
+    "static/media/electricidad.svg": "/Moprinca-web/static/media/electricidad.463c0de7311f987cc90eab8d2a6dbd6d.svg",
+    "static/media/flecha.svg": "/Moprinca-web/static/media/flecha.d36c638a0bc7c4ccf031d34d3500d945.svg",
+    "main.59810f37.css.map": "/Moprinca-web/static/css/main.59810f37.css.map",
+    "main.c881493f.js.map": "/Moprinca-web/static/js/main.c881493f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59810f37.css",
+    "static/js/main.c881493f.js"
+  ]
+}
