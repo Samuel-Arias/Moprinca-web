@@ -1,0 +1,19 @@
+{
+    "slides": [
+        {
+            "texto": "Instalacion y mantenimiento de aire acondicionado",
+            "textoLink": "vea nuestros servicios",
+            "linkArrow": "servicios"
+        },
+        {
+            "texto": "Trabajos con excelencia y esmero",
+            "textoLink": "vea nuestros trabajos",
+            "linkArrow": "trabajos"
+        },
+        {
+            "texto": "Ayudarte es nuestra meta principal",
+            "textoLink": "vea mas sobre nosotros",
+            "linkArrow": "sobre-nosotros"
+        }
+    ]
+}
