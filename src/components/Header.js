@@ -4,7 +4,7 @@ import logo from '../assets/Iconos/Moproinca-logo.svg'
 import simpleLogo from '../assets/Iconos/Moproinca-simple-logo.svg'
 import menu from '../assets/Iconos/menu.svg'
 import { useDispatch ,useSelector } from 'react-redux'
-import { openNavbar, closeNavbar } from '../actions/UI'
+import { openNavbar } from '../actions/UI'
 
 const ocultarLogo = keyframes`
     0% {

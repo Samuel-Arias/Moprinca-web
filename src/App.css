@@ -12,3 +12,7 @@ body, html, #root{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+#root {
+    position: relative;
+}

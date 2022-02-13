@@ -45,14 +45,14 @@ const StyleSlide = styled.div`
 
     div:last-of-type {
         position: absolute;
-        bottom: 5px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        img {
+        a img {
             width: 30px;
         }
 
