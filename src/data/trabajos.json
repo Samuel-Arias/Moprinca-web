@@ -1,0 +1,40 @@
+{
+    "jobs": [
+        {
+            "name": "aire",
+            "tituloJobs": "Reparacion y mantenimineto de aire acondicionado"
+        },
+        {
+            "name": "paredes",
+            "tituloJobs": "Resanamiento de paredes"
+        },
+        {
+            "name": "techo",
+            "tituloJobs": "Impermeabilizacion y fabricacion de techo"
+        },
+        {
+            "name": "drywall",
+            "tituloJobs": "Fabricacion de Drywall"
+        },
+        {
+            "name": "ordenElec",
+            "tituloJobs": "Reordenamiento electrico"
+        },
+        {
+            "name": "puntoElec",
+            "tituloJobs": "Fabricacion de puntos electricos"
+        },
+        {
+            "name": "piso",
+            "tituloJobs": "Instalacion de piso laminado"
+        },
+        {
+            "name": "puerta",
+            "tituloJobs": "Instalacion de puerta de vidrio"
+        },
+        {
+            "name": "agua",
+            "tituloJobs": "Fabricacion de puntos de agua e instalacion de bomba de agua"
+        }
+    ]
+}
