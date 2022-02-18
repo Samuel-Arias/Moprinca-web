@@ -4,5 +4,7 @@ export const types = {
     openNavbar: '[UI] Open navbar',
     closeNavbar: '[UI] Close navbar',
 
-    setImgLoaded: '[Carrusel] Set img loaded'
+    setImgLoaded: '[Carrusel] Set img loaded',
+
+    selectedJob: '[UI] Selected job'
 }

@@ -23,3 +23,8 @@ export const closeNavbar = () => (
         type: types.closeNavbar
     }
 )
+
+export const selectJob = (object) => ({
+    type: types.selectedJob,
+    payload: object
+})

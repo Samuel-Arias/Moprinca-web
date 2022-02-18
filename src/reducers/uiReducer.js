@@ -6,6 +6,9 @@ let initState = {
     },
     navbar: {
         open: false
+    },
+    job: {
+        selected: null
     }
 }
 
@@ -40,6 +43,14 @@ const uiReducer = (state = initState, action) => {
                 ...state,
                 navbar: {
                     open: false
+                }
+            }
+
+        case types.selectedJob:
+            return {
+                ...state,
+                job: {
+                    selected:{...action.payload}
                 }
             }
     
