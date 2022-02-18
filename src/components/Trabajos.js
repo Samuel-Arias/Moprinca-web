@@ -2,8 +2,11 @@ import styled, { css } from 'styled-components'
 import { useState } from 'react'
 
 import { Titulo } from "../styles/components/globalStyles"
-import data from '../data/trabajos.json'
+import { jobs } from '../data/trabajos'
 import getImages from '../helpers/getImage'
+import { useDispatch } from 'react-redux'
+import { selectJob } from '../actions/UI'
+import { useNavigate } from 'react-router-dom'
 
 const ContJobs = styled.div`
     width: 100%;
@@ -50,12 +53,18 @@ const MoreJobs = styled.p`
 
 const Trabajos = () => {
 
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
     const [showMore, setShowMore] = useState(false);
-    const dataJobs = data.jobs
 
-    getImages(require.context('../assets/Trabajos/portadaJob', false, /\.jpeg$/), dataJobs)
+    getImages(require.context('../assets/Trabajos/portadaJob', false, /\.jpeg$/), jobs)
 
     const showMoreJobs = () => setShowMore(!showMore)
+
+    const handleClick = (object) => {
+        dispatch( selectJob(object) )
+        navigate('/trabajo')
+    }
 
     return (
         <div>
@@ -67,8 +76,8 @@ const Trabajos = () => {
             <ContJobs moreJobs={showMore}>
 
                 {
-                    dataJobs.map((job, i) => (
-                        <CardJob key={i}>
+                    jobs.map((job, i) => (
+                        <CardJob key={i} onClick={() => handleClick(job)}>
                             <img src={job.img} alt={job.tituloJobs} />
                             <p>{job.tituloJobs}</p>
                         </CardJob>
