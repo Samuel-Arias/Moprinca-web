@@ -34,12 +34,12 @@ export const jobs = [
     {
         name: "piso",
         tituloJobs: "Instalacion de piso laminado",
-        imgs: getImages(require.context('../assets/Trabajos/aire', false, /\.jpeg$/))
+        imgs: getImages(require.context('../assets/Trabajos/piso', false, /\.jpeg$/))
     },
     {
         name: "puerta",
         tituloJobs: "Instalacion de puerta de vidrio",
-        imgs: getImages(require.context('../assets/Trabajos/piso', false, /\.jpeg$/))
+        imgs: getImages(require.context('../assets/Trabajos/puerta', false, /\.jpeg$/))
     },
     {
         name: "agua",
