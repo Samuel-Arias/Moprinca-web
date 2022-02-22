@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import insta from '../assets/Logos/instagram.png'
 import face from '../assets/Logos/facebook.png'
 import twitter from '../assets/Logos/twitter.png'
-import linke from '../assets/Logos/linkedin.png'
 import logo from '../assets/Iconos/Moproinca-logo.svg'
 import { MainContainer } from '../styles/components/globalStyles'
 
@@ -34,6 +33,7 @@ const Social = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
+  padding: 0 30px;
 
   a {
     width: 30px;
@@ -62,9 +62,6 @@ const Footer = () => {
           </a>
           <a href='#'>
             <img src={twitter} alt='Facebook'/>
-          </a>
-          <a href='#'>
-            <img src={linke} alt='Linkedin'/>
           </a>
         </Social>
 
