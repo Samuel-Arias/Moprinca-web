@@ -8,7 +8,7 @@ let initState = {
         open: false
     },
     job: {
-        selected: null
+        selected: JSON.parse(localStorage.getItem('selectedObject')) || null
     }
 }
 

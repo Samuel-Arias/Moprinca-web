@@ -55,13 +55,17 @@ const Trabajos = () => {
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const [showMore, setShowMore] = useState(false);
+    const [showMore, setShowMore] = useState(JSON.parse(localStorage.getItem('openJobs')) || false);
 
     getImages(require.context('../assets/Trabajos/portadaJob', false, /\.jpeg$/), jobs)
 
-    const showMoreJobs = () => setShowMore(!showMore)
+    const showMoreJobs = () => {
+        localStorage.setItem('openJobs', String(!showMore))
+        setShowMore(!showMore)
+    }
 
     const handleClick = (object) => {
+        localStorage.setItem('selectedObject', JSON.stringify(object))
         dispatch( selectJob(object) )
         navigate('/trabajo')
     }

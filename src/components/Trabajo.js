@@ -67,7 +67,10 @@ const Trabajo = () => {
     const { selected } = useSelector( state => state.UI.job )
     const navigate = useNavigate()
 
-    const handleClick = () => navigate(-1)
+    const handleClick = () => {
+        localStorage.removeItem('selectedObject')
+        navigate(-1)
+    }
     
     return (
         <Container>
