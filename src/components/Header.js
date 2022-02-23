@@ -5,6 +5,7 @@ import simpleLogo from '../assets/Iconos/Moproinca-simple-logo.svg'
 import menu from '../assets/Iconos/menu.svg'
 import { useDispatch ,useSelector } from 'react-redux'
 import { openNavbar } from '../actions/UI'
+import DescktopNavbar from '../UI/DescktopNavbar'
 
 const ocultarLogo = keyframes`
     0% {
@@ -42,31 +43,49 @@ const ocultarHeader = keyframes`
     }
 `
 
-const Plogo = styled.div`
-    position: fixed;
-    top: -74px;
-    left: 0;
-    z-index: 1000;
-
-    min-width: 100vw;
-    padding-top: 8px;
-    display: flex;
-    justify-content: center;
-
-    animation: ${({ hidden }) => hidden ? ocultarLogo : mostrarLogo} .3s linear both;
-`
-
-const MiniHeader = styled.div`
-    position: fixed;
-    top: -48px;
-    left: 0;
-    z-index: 1000;
-
+const StyledHeader = styled.div`
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: ${({ hidden }) => hidden ? mostrarHeader : ocultarHeader} .3s linear both;
+
+    .logoMobile {
+        position: fixed;
+        top: -74px;
+        z-index: 1000;
+
+        width: 100%;
+        padding-top: 8px;
+        display: flex;
+        justify-content: center;
+
+        animation: ${({ show }) => show ? ocultarLogo : mostrarLogo} .3s linear both;
+        
+    }
+
+    .headerMobile {
+        position: fixed;
+        top: -48px;
+        left: 0;
+        z-index: 100;
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: ${ ({ show }) => show ? mostrarHeader : ocultarHeader } .3s linear both;
+    }
+
+    div:nth-child(3) {
+        display: none;
+    }
+
+    @media (min-width: 781px) {
+        div:nth-child(3){
+            display: flex;
+        }
+
+        .headerMobile {
+            display: none;
+        }
+    }
 `
 
 
@@ -78,19 +97,20 @@ const Header = () => {
     const handleClick = () => dispatch( openNavbar() )
 
     return (
-        <>
-            <Plogo hidden={hidden}>
+        <StyledHeader show={hidden}>
+            <div className='logoMobile'>
                 <img src={logo} alt='Logo' />
-            </Plogo>
-            <MiniHeader hidden={hidden}>
+            </div>
+            <div className='headerMobile'>
                 <div>
                     <img src={simpleLogo} alt='logo' />
                 </div>
                 <div>
                     <img src={menu} alt='menu' onClick={handleClick}/>
                 </div>
-            </MiniHeader>
-        </>
+            </div>
+            <DescktopNavbar show={hidden} />
+        </StyledHeader>
     )
 }
 
