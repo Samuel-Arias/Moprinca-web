@@ -28,6 +28,10 @@ const Card = styled.div`
 
     &:nth-child(5), :nth-child(6) {
         margin-top: 38px;
+
+        @media (min-width: 500px) {
+            margin-top: 0;
+        }
     }
 
     &:nth-child(2), :nth-child(3), :nth-child(5) {
@@ -46,6 +50,32 @@ const Card = styled.div`
         color: #FFFFFF;
         font-weight: 100;
         font-size: 13px;
+    }
+
+    @media (min-width: 500px) {
+        width: 101px;
+
+        &:nth-child(4) {
+            margin-right: 21px;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        width: 145px;
+        padding: 25px 0;
+
+        img {
+            width: 65px;
+            height: 65px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        &:nth-child(4) {
+            margin-right: 21px;
+        }
     }
 `
 
@@ -76,6 +106,33 @@ const CardPrincipal = styled.div`
             margin-left: 15px;
         }
     }
+
+    @media (min-width: 500px) {
+        display: none;
+    }
+`
+const CardPrincipalDesck = styled(CardPrincipal)`
+    display: none;
+
+    @media (min-width: 500px) {
+        display: flex;
+        width: 355px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 1000px) {
+        width: 455px;
+
+        img {
+            width: 85px;
+            height: 85px;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }
 `
 
 const Servicios = () => {
@@ -84,9 +141,23 @@ const Servicios = () => {
             <Titulo>
                 <p>Servicios</p>
             </Titulo>
+
+            <CardPrincipalDesck>
+                <img src={copo} alt='Copo de nieve' />
+                <span>
+                    Equipos de refrigeracion y climatizacion:
+                    <ul>
+                        <li>Reparacion</li>
+                        <li>Instalacion</li>
+                        <li>mantenimiento</li>
+                    </ul>
+                </span>
+            </CardPrincipalDesck>
+
             <ContainerServs>
-                <CardPrincipal width={255} FD>
-                    <img src={copo} alt='Copo de nieve'/>
+
+                <CardPrincipal>
+                    <img src={copo} alt='Copo de nieve' />
                     <span>
                         Equipos de refrigeracion y climatizacion:
                         <ul>
@@ -96,26 +167,32 @@ const Servicios = () => {
                         </ul>
                     </span>
                 </CardPrincipal>
+
                 <Card>
-                    <img src={elect} alt='Rayo'/>
+                    <img src={elect} alt='Rayo' />
                     <p>Electricidad</p>
                 </Card>
+
                 <Card>
-                    <img src={plome} alt='Grifo'/>
+                    <img src={plome} alt='Grifo' />
                     <p>Plomeria</p>
                 </Card>
+
                 <Card>
-                    <img src={drywall} alt='Muro'/>
+                    <img src={drywall} alt='Muro' />
                     <p>Drywall</p>
                 </Card>
+
                 <Card>
-                    <img src={brocha} alt='Brocha'/>
+                    <img src={brocha} alt='Brocha' />
                     <p>Pintura</p>
                 </Card>
+
                 <Card>
-                    <img src={gota} alt='Gota'/>
-                    <p>Impermea- <br/> bilizacion</p>
+                    <img src={gota} alt='Gota' />
+                    <p>Impermea- <br /> bilizacion</p>
                 </Card>
+
             </ContainerServs>
         </div>
     )

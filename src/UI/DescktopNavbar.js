@@ -1,5 +1,3 @@
-// dar estilos al navbar de escritorio y aplicar la misma animacion de ocultar y mostrar (ver Header estilos de div:nth-child(2))
-
 import styled, { keyframes } from "styled-components"
 
 import logo from '../assets/Iconos/Moproinca-logo.svg'
@@ -25,7 +23,7 @@ const ocultar = keyframes`
 const StyledNavbar = styled.div`
     width: 100%;
     height: max-content;
-    padding: 0 10px;
+    padding: 0 20px 0 0;
     background-color: #FFFFFF;
     box-shadow: 0 1px 5px rgba(0,0,0,.25);
 
@@ -43,6 +41,7 @@ const StyledNavbar = styled.div`
     .logoDesck {
         width: 229px;
         height: 50px;
+        cursor: pointer;
 
         img {
             width: 100%;
@@ -57,9 +56,26 @@ const StyledNavbar = styled.div`
         a {
             text-decoration: none;
             font-size: 16px;
-            font-weight: 300;
+            font-weight: 400;
             color: #BDBDBD;
             margin-right: 20px;
+            transition: color .3s;
+
+            &:hover:nth-child(1) {
+                color: #002270;
+            }
+            &:hover:nth-child(2) {
+                color: #333258;
+            }
+            &:hover:nth-child(3) {
+                color: #614142;
+            }
+            &:hover:nth-child(4) {
+                color: #982b1f;
+            }
+            &:hover:nth-child(5) {
+                color: #e96c01;
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -76,9 +92,9 @@ const StyledNavbar = styled.div`
 const DescktopNavbar = ({show}) => {
   return (
       <StyledNavbar hidden={show}>
-          <div className="logoDesck">
+          <a className="logoDesck" href='#inicio'>
               <img src={logo} alt='logo'/>
-          </div>
+          </a>
           <div className="links">
               <a href='#inicio'>Inicio</a>
               <a href='#sobre-nosotros'>Sobre nosotros</a>

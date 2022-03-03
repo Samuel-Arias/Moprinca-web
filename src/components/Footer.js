@@ -1,20 +1,36 @@
 import styled from 'styled-components'
 
-import insta from '../assets/Logos/instagram.png'
+import insta from '../assets/Iconos/instagram.svg'
 import face from '../assets/Logos/facebook.png'
-import twitter from '../assets/Logos/twitter.png'
 import logo from '../assets/Iconos/Moproinca-logo.svg'
 import { MainContainer } from '../styles/components/globalStyles'
 
 const StyleFooter = styled.footer`
   width: 100%;
   background-color: #002270;
+
+  .derechos {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 100;
+    color: #FFFFFF;
+  }
+
+  @media (min-width: 580px) {
+    padding-bottom: 9px;
+
+    .derechos {
+      display: block;
+    }
+  }
 `
 const ContainerFoo = styled(MainContainer)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 19px 0 9px 0;
+  padding: 20px 0 9px 0;
 
   .logo {
     margin-bottom: 22px;
@@ -24,6 +40,24 @@ const ContainerFoo = styled(MainContainer)`
     font-size: 11px;
     font-weight: 100;
     color: #FFFFFF;
+  }
+
+  @media (min-width: 580px) {
+    flex-direction: row-reverse;
+    margin: 0 0 20px 0;
+    padding-bottom: 0;
+
+    .logo {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+    }
+
+    p {
+      display: none;
+    }
   }
 `
 
@@ -37,12 +71,26 @@ const Social = styled.div`
 
   a {
     width: 30px;
-    height: 30px;
 
     img {
       width: 100%;
-      height: 100%;
     }    
+  }
+
+  @media (min-width: 580px) {
+    width: 50%;
+    justify-content: stretch;
+    padding: 0;
+    margin: 0 0 0 50px;
+
+    a {
+      width: 40px;
+      margin-right: 30px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
   }
 `
 
@@ -54,14 +102,11 @@ const Footer = () => {
       <ContainerFoo>
 
         <Social>
-          <a href='#'>
+          <a href='https://www.instagram.com/moproinca_/?hl=es'>
             <img src={insta} alt='Instagram'/>
           </a>
-          <a href='#'>
+          <a href='https://www.facebook.com/moproinca'>
             <img src={face} alt='Twitter'/>
-          </a>
-          <a href='#'>
-            <img src={twitter} alt='Facebook'/>
           </a>
         </Social>
 
@@ -70,6 +115,8 @@ const Footer = () => {
         <p>© Copyright 2021 by Samuel Arias. All rights reserved.</p>
 
       </ContainerFoo>
+
+      <p className='derechos'>© Copyright 2021 by Samuel Arias. All rights reserved.</p>
 
     </StyleFooter>
 

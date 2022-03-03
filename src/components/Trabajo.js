@@ -18,6 +18,7 @@ const BackArrow = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     img {
         width: 20px;
@@ -31,6 +32,10 @@ const Title = styled(Titulo)`
 
     p {
         font-size: 20px;
+
+        @media (min-width: 781px) {
+            font-size: 25px;
+        }
     }
 
     &::after {
@@ -42,7 +47,14 @@ const Images = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+
+    @media (min-width: 781px) {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(300px, 1fr) );
+        grid-auto-rows: min-content;
+        grid-gap: 20px;
+    }   
 `
 
 const Image = styled.div`

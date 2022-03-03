@@ -4,19 +4,44 @@ import reunion from '../assets/reunion.jpg'
 import { Texto, Titulo } from '../styles/components/globalStyles'
 import styled from 'styled-components'
 
-const ImgEquipo = styled.div`
-    width: 165px;
-    height: 211px;
-    float: right;
-    margin-left: 8px;
-    overflow: hidden;
-    border-radius: 2px;
+const MainText = styled.div`
+    width: 100%;
 
     img {
-        width: 100%;
-        height: 100%;
+        width: 165px;
+        height: 211px;
+        float: right;
+        margin-left: 8px;
+        overflow: hidden;
+        border-radius: 2px;
         object-fit: cover;
         object-position: -38px;
+    }
+
+    @media (min-width: 515px) {
+        height: 216px;
+        display: flex;
+
+        img {
+            width: 60%;
+            height: 100%;
+            margin-left: 0px;
+            margin-right: 8px;
+            object-position: center;
+            float: none;
+        }
+    }
+
+    @media (min-width: 1075px) {
+        img {
+            object-position: center -100px;
+        }
+    }
+
+    @media (min-width: 1350px) {
+        img {
+            object-position: center -130px;
+        }
     }
 `
 
@@ -34,9 +59,7 @@ const Card = styled.div`
         color: #002270;
         margin-bottom: 6px;
         align-self: ${
-            ({number}) => (
-                (number === 2) ? 'flex-end' : 'flex-start'
-            )
+            ({number}) => ( (number === 2) ? 'flex-end' : 'flex-start' )
         };
     }
 
@@ -71,6 +94,50 @@ const Card = styled.div`
 
         }
     }
+
+    @media (min-width: 645px) {
+        display: inline-block;
+        width: 48%;
+
+        &:last-of-type {
+            float: right;
+            align-self: stretch;
+        }
+        
+        p {
+            width: 100%;
+        }
+
+        div {
+            height: 180px;
+        }
+    }
+
+    @media (min-width: 781px) {
+        p {
+            font-size: 22px;
+        }
+
+        div p {
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        div {
+            height: 210px;
+        }
+    }
+
+    @media (min-width: 1300px) {
+        p {
+            font-size: 24px;
+        }
+
+        div p {
+            font-size: 18px;
+        }
+    }
 `
 
 const SobreNosotros = () => {
@@ -80,14 +147,12 @@ const SobreNosotros = () => {
                 <p>Sobre nosotros</p>
             </Titulo>
 
-            <div>
-                <ImgEquipo>
-                    <img src={equipo} alt='equipo-moproinca' />
-                </ImgEquipo>
+            <MainText>
+                <img src={equipo} alt='equipo-moproinca' />
                 <Texto>
                     Moproinca es un empredimiento desarrollado en noviembre de 2020 por un grupo de técnicos profesionales con más de 9 años de experiencia en áreas civiles, mecánicas y eléctricas, para ofrecer múltiples servicios que le  brindan comodidad y satisfacción a nuestros clientes.
                 </Texto>
-            </div>
+            </MainText>
 
             <Card>
                 <p>Mision</p>

@@ -9,19 +9,37 @@ import DescktopNavbar from '../UI/DescktopNavbar'
 
 const ocultarLogo = keyframes`
     0% {
-        transform: translateY(74px);
+        transform: translateY(8px);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(-66px);
     }
 `
 
 const mostrarLogo = keyframes`
     0% {
-        transform: translateY(0);
+        transform: translateY(-66px);
     }
     100% {
-        transform: translateY(74px);
+        transform: translateY(8px);
+    }
+`
+
+const ocultarLogoDesck = keyframes`
+    0% {
+        transform: translateY(16px);
+    }
+    100% {
+        transform: translateY(-66px);
+    }
+`
+
+const mostrarLogoDesck = keyframes`
+    0% {
+        transform: translateY(-66px);
+    }
+    100% {
+        transform: translateY(16px);
     }
 `
 
@@ -48,16 +66,23 @@ const StyledHeader = styled.div`
 
     .logoMobile {
         position: fixed;
-        top: -74px;
+        top: 0;
         z-index: 1000;
 
         width: 100%;
-        padding-top: 8px;
         display: flex;
         justify-content: center;
 
-        animation: ${({ show }) => show ? ocultarLogo : mostrarLogo} .3s linear both;
+        animation: ${({ show }) => show ? ocultarLogo : mostrarLogo } .3s linear both;
         
+        @media (min-width: 781px) {
+            animation: none;
+            animation: ${({ show }) => show ? ocultarLogoDesck : mostrarLogoDesck } .3s linear both;
+
+            img {
+                transform: scale(1.2);
+            }
+        }
     }
 
     .headerMobile {
@@ -102,9 +127,9 @@ const Header = () => {
                 <img src={logo} alt='Logo' />
             </div>
             <div className='headerMobile'>
-                <div>
+                <a href='#inicio'>
                     <img src={simpleLogo} alt='logo' />
-                </div>
+                </a>
                 <div>
                     <img src={menu} alt='menu' onClick={handleClick}/>
                 </div>

@@ -40,6 +40,11 @@ const StyleSlide = styled.div`
             font-family: 'Poppins', sans-serif;
             font-size: 30px;
             font-weight: 700;
+
+            @media (min-width: 781px) {
+                width: 510px;
+                font-size: 45px;
+            }
         }
     }
 

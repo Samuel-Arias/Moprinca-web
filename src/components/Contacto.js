@@ -37,7 +37,6 @@ const Form = styled.form`
         grid-area: boton;
         border: none;
         outline: none;
-        width: 166px;
         height: 50px;
         background-color: #E96B00;
         border-radius: 20px;
@@ -46,6 +45,18 @@ const Form = styled.form`
         font-size: 18px;
         font-weight: 700;
         text-align: center;
+        cursor: pointer;
+    }
+
+    @media (min-width: 781px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "nombre nombre consulta consulta"
+            "apellido apellido consulta consulta"
+            "email email consulta consulta"
+            ". boton boton ."
+        ;
     }
 
 `
@@ -84,6 +95,12 @@ const ContInput = styled.div`
         padding-left: 4px;
         resize: none;
         color: #002270;
+    }
+
+    @media (min-width: 781px) {
+        input {
+            height: 40px;
+        }
     }
 `
 

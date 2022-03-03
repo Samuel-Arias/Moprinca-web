@@ -18,14 +18,14 @@ const Main = () => {
 
         <MainContainer>
 
-        <DivSeparacion id='sobre-nosotros'/>
-        <SobreNosotros />
-        <DivSeparacion id='servicios'/>
-        <Servicios />
-        <DivSeparacion id='trabajos'/>
-        <Trabajos />
-        <DivSeparacion id='contacto'/>
-        <Contacto />
+          <DivSeparacion id='sobre-nosotros'/>
+          <SobreNosotros />
+          <DivSeparacion id='servicios'/>
+          <Servicios />
+          <DivSeparacion id='trabajos'/>
+          <Trabajos />
+          <DivSeparacion id='contacto'/>
+          <Contacto />
 
         </MainContainer>
 

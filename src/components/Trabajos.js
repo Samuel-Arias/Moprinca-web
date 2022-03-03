@@ -11,9 +11,48 @@ import { useNavigate } from 'react-router-dom'
 const ContJobs = styled.div`
     width: 100%;
     ${({ moreJobs }) => (
-        moreJobs ? 'height: min-content' : css`
+        moreJobs 
+            ? css`
+                height: min-content;
+
+                @media (min-width: 600px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    height: 1250px;                
+                }
+
+                @media (min-width: 1100px) {
+                    height: 1850px;                
+                }
+
+            ` 
+            : css`
                 height: 753px;
                 overflow-y: hidden;
+
+                @media (min-width: 508px) {
+                    height: 745px;
+                }
+                
+                @media (min-width: 600px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    height: 530px;
+                }
+
+                @media (min-width: 780px) {
+                    height: 500px;
+                }
+
+                @media (min-width: 807px) {
+                    height: 490px;
+                }
+
+                @media (min-width: 1100px) {
+                    height: 735px;
+                }
             `
     )
     }
@@ -24,6 +63,7 @@ const CardJob = styled.div`
     height: max-content;
     margin-bottom: 28px;
     overflow: hidden;
+    cursor: pointer;
     
     img {
         width: 100%;
@@ -39,6 +79,20 @@ const CardJob = styled.div`
         font-weight: 300;
         font-size: 16px;
     }
+
+    @media (min-width: 600px) {
+        width: 47%;
+    } 
+
+    @media (min-width: 1100px) {
+        img {
+            height: 319px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    } 
 `
 
 const MoreJobs = styled.p`
@@ -49,6 +103,15 @@ const MoreJobs = styled.p`
     color: #002270;
     text-decoration: underline;
     margin-top: 25px;
+    cursor: pointer;
+
+    @media (min-width: 912px) {
+        font-size: 15px;
+    }
+
+    @media (min-width: 1100px) {
+        font-size: 18px;
+    }
 `
 
 const Trabajos = () => {
