@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Moprinca-web/static/css/main.c7a73e2f.css",
-    "main.js": "/Moprinca-web/static/js/main.38fea395.js",
+    "main.js": "/Moprinca-web/static/js/main.5a2f8fb5.js",
     "static/media/cemento.jpg": "/Moprinca-web/static/media/cemento.7d8f77faffeb138758f9.jpg",
     "static/media/metro.jpg": "/Moprinca-web/static/media/metro.150c5f2f6baecf67f032.jpg",
     "static/media/instagram.svg": "/Moprinca-web/static/media/instagram.edd80ebcc837c80ed2b2479d944af28a.svg",
@@ -73,10 +73,10 @@
     "static/media/electricidad.svg": "/Moprinca-web/static/media/electricidad.463c0de7311f987cc90eab8d2a6dbd6d.svg",
     "static/media/flecha.svg": "/Moprinca-web/static/media/flecha.d36c638a0bc7c4ccf031d34d3500d945.svg",
     "main.c7a73e2f.css.map": "/Moprinca-web/static/css/main.c7a73e2f.css.map",
-    "main.38fea395.js.map": "/Moprinca-web/static/js/main.38fea395.js.map"
+    "main.5a2f8fb5.js.map": "/Moprinca-web/static/js/main.5a2f8fb5.js.map"
   },
   "entrypoints": [
     "static/css/main.c7a73e2f.css",
-    "static/js/main.38fea395.js"
+    "static/js/main.5a2f8fb5.js"
   ]
 }
