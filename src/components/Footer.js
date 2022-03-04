@@ -52,7 +52,7 @@ const ContainerFoo = styled(MainContainer)`
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      margin: 0;
+      margin: 0 50px 0 0;
     }
 
     p {
@@ -65,12 +65,17 @@ const Social = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 25px;
   padding: 0 30px;
 
   a {
     width: 30px;
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin: 0;
+    }
 
     img {
       width: 100%;
@@ -81,15 +86,10 @@ const Social = styled.div`
     width: 50%;
     justify-content: stretch;
     padding: 0;
-    margin: 0 0 0 50px;
+    margin: 0;
 
     a {
       width: 40px;
-      margin-right: 30px;
-
-      &:last-of-type {
-        margin: 0;
-      }
     }
   }
 `
